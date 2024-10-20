@@ -1,11 +1,11 @@
-import React from 'react'
-
 export function TodoCard(props) {
   const { todo, todoIndex, handleDeleteTodo, handleCompleteTodo } = props
-  const doneOrUndone = todo.complete ? 'Done' : 'Re-Open'
+  const doneOrUndone = todo.complete ? 'Re-Open' : 'Done'
   return (
     <div className='card todo-item'>
-      <p>{todo.input}</p>
+      <p className={
+        todo.complete ? 'striked' : ''
+      }>{todo.input}</p>
       <div className='todo-buttons'>
         <button onClick={() => {
           handleCompleteTodo(todoIndex)

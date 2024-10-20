@@ -1,4 +1,3 @@
-import React from 'react'
 
 export function Header(props) {
   const { todos } = props

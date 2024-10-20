@@ -20,9 +20,9 @@ function App() {
 
   function handleCompleteTodo(index) {
     let newTodoList = [...todos]
-    let completedTodo = todos[index]
-    completedTodo['complete'] = !completedTodo.complete
-    newTodoList[index] = completedTodo
+    let selectedTodo = todos[index]
+    selectedTodo['complete'] = !selectedTodo.complete
+    newTodoList[index] = selectedTodo
     setTodos(newTodoList)
     handleSaveData(newTodoList)
   }

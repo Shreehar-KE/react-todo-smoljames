@@ -114,6 +114,10 @@ hr {
   font-weight: 500;
 }
 
+.todo-item p.striked {
+  text-decoration: line-through;
+}
+
 .input-container {
   display: flex;
   align-items: center;
