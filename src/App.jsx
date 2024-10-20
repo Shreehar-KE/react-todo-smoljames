@@ -5,15 +5,9 @@ import { TodoList } from './components/TodoList'
 import { useState, useEffect } from 'react'
 
 function App() {
-  // const todos = [
-  //   { input: 'Hello! Add your first todo!', complete: true },
-  //   { input: 'Get the groceries!', complete: false },
-  //   { input: 'Learn how to web design', complete: false },
-  //   { input: 'Say hi', complete: true },
-  // ]
 
   const [todos, setTodos] = useState([
-    { input: 'Hello! Add your first todo!', complete: true },
+    { input: 'Hello! Add your first todo!', complete: false },
   ])
 
   const [selectedTab, setSelectedTab] = useState('Open')
