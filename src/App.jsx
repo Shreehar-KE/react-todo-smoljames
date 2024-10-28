@@ -13,7 +13,7 @@ function App() {
     { input: 'Update the Portfolio Website', complete: false },
   ])
 
-  const [selectedTab, setSelectedTab] = useState('Open')
+  const [selectedTab, setSelectedTab] = useState('All')
 
   function handleAddTodo(newTodo) {
     const newTodoList = [...todos, { input: newTodo, complete: false }]
